@@ -102,7 +102,7 @@ class Series
     public function getSeriesByType(int $id_type): array
     {
         try {
-            $request = "SELECT * FROM series WHERE id_type = ? ORDER BY id_serie DESC LIMIT 4";
+            $request = "SELECT id_serie, title, author, description, status, cover_image, id_type FROM series WHERE id_type = ? ORDER BY id_serie DESC LIMIT 4";
             $req = $this->connexion->prepare($request);
             $req->bindValue(1, $id_type, \PDO::PARAM_INT);
             $req->execute();
