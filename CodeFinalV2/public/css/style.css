@@ -1,0 +1,367 @@
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-lancelot: 'Lancelot', cursive;
+    --purple: #7E73F5;
+    --black: #0F0F0F;
+    --dark: #1C1C1C;
+    --dark_button_hover: #232323;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark);
+}
+
+div {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: var(--font-roboto);
+    transition: background-color 0.3s ease;
+    border-radius: 5em;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
+
+nav a.active {
+    color: #6D59DE;
+}
+
+#navbar-right {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#burger {
+    display: none;
+    background: none;
+    
+}
+
+
+
+#navbar-right .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#avatar {
+    border-radius: 50%; 
+}
+
+body {
+    background-color: var(--black);
+}
+
+section {
+    margin-top: 2%;
+}
+
+#genres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: var(--purple);
+    font-family: var(--font-roboto);
+    font-weight: 500;
+}
+
+#genres article {
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#genres article a:nth-child(2) {
+    padding-left: 5%;
+}
+
+#genres article a:nth-child(3) {
+    padding-left: 5%;
+}
+
+#genres article a {
+    transition: transform 0.2s;
+}
+
+#genres article a:hover {
+    transform: scale(1.05);
+}
+
+
+h3 {
+    text-align: center;
+    color: var(--white);
+    font-family: var(--font-lancelot);
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#Nouveau article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+#Nouveau div {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+#Nouveau figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    color: var(--white);
+    font-family: var(--font-lancelot);
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    min-width: 100px;
+    max-width: 150px;
+    transition: transform 0.2s;
+}
+
+#Nouveau figure:hover {
+    transform: scale(1.1);
+}
+
+#Nouveau figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    padding: 1%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section {
+    margin-top: 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: var(--white);
+    font-family: var(--font-roboto);
+    font-size: 2em;
+    text-decoration: none;
+    align-items: start;
+}
+
+#reseau a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reseau {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#reseau img {
+    width: 70%;
+}
+
+/* Remplacez vos règles .carousel et .carousel-item existantes par : */
+
+.carousel {
+    position: relative;
+    width: 1120px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 2%;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.carousel-item {
+    width: 150px;       
+    height: 200px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+  
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+  
+.carousel-item:hover img {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* Media queries pour ajuster le carousel */
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 600;
+        height: 187px;
+    }
+
+    .carousel-item {
+    width: 90px;       
+    height: 140px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        width: 340px;
+        height: 160px;
+    }
+
+        .carousel-item {
+    width: 60px;       
+    height: 90px;
+    transition: width 0.3s ease, height 0.3s ease;
+    }
+
+header {
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+
+    #navbar-center {
+        display: none;
+    }
+
+    #navbar-right {
+        display: none; /* Cache login/avatar */
+    }
+
+    #burger {
+        display: block; /* Affiche le burger */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+        #genres article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #genres article a {
+        flex: 1;            /* Chacun occupe 1/3 */
+        display: flex;
+        justify-content: center;
+    }
+
+    #genres article a img {
+        width: 100%;         /* Ajuste la taille des images */
+        height: auto;
+    }
+
+        #Nouveau div {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        width: 100%;
+    }
+
+    #Nouveau figure {
+        min-width: auto;
+        max-width: none;
+        width: 100%;
+        padding: 2px;
+        font-size: 0.8em;
+    }
+
+    #Nouveau figure img {
+        width: 100%;
+        height: auto;
+    }
+
+        footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    footer section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #reseau {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #reseau img {
+        width: 40px; /* Taille propre pour les icônes sur mobile */
+        height: auto;
+    }
+
+    footer a {
+        font-size: 1.5em; /* Réduit pour éviter que ça déborde */
+    }
+}
