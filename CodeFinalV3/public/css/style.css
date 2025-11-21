@@ -257,7 +257,6 @@ footer a {
 }
 
 /* Media queries */
-
 @media (max-width: 768px) {
     .carousel {
         width: 600px;

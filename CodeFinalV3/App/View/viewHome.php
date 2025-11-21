@@ -90,18 +90,16 @@
         <section class="carousel-section">
             <h2>Les plus populaires</h2>
             <div class="carousel">
-                <a href="" class="carousel-item"><img src="./public/img/Webtoon/Infinite.svg" alt="Infinite Mage"></a>
-                <a href="" class="carousel-item"><img src="./public/img/LN/TBATE.svg"
-                        alt="The Beginning After The End"></a>
-                <a href="" class="carousel-item"><img src="./public/img/LN/Danmachi.svg" alt="Danmachi"></a>
-                <a href="" class="carousel-item"><img src="./public/img/LN/SAO.svg" alt="Sword Art Online"></a>
-                <a href="" class="carousel-item"><img src="./public/img/Webtoon/Revenge.svg"
-                        alt="Revenge of The Iron-Blooded ..."></a>
-                <a href="" class="carousel-item"><img src="./public/img/Webtoon/Wind.svg" alt="Wind Breaker"></a>
-                <a href="" class="carousel-item"><img src="./public/img/Manga/Black.svg" alt="Black Clover"></a>
-                <a href="" class="carousel-item"><img src="./public/img/Manga/One.svg" alt="One Piece"></a>
-                <a href="" class="carousel-item"><img src="./public/img/Webtoon/Solo.svg" alt="Solo Leveling"></a>
-                <a href="" class="carousel-item"><img src="./public/img/Manga/Black.svg" alt="Black Clover"></a>
+                <a href="/webtoon/infinite-mage" class="carousel-item"><img src="./public/img/Webtoon/Infinite.svg" alt="Infinite Mage"></a>
+                <a href="/ln/the-beginning-after-the-end" class="carousel-item"><img src="./public/img/LN/TBATE.svg" alt="The Beginning After The End"></a>
+                <a href="/ln/danmachi" class="carousel-item"><img src="./public/img/LN/Danmachi.svg" alt="Danmachi"></a>
+                <a href="/ln/sword-art-online" class="carousel-item"><img src="./public/img/LN/SAO.svg" alt="Sword Art Online"></a>
+                <a href="/webtoon/revenge-of-the-iron-blooded" class="carousel-item"><img src="./public/img/Webtoon/Revenge.svg" alt="Revenge of The Iron-Blooded ..."></a>
+                <a href="/webtoon/wind-breaker" class="carousel-item"><img src="./public/img/Webtoon/Wind.svg" alt="Wind Breaker"></a>
+                <a href="/manga/black-clover" class="carousel-item"><img src="./public/img/Manga/Black.svg" alt="Black Clover"></a>
+                <a href="/manga/one-piece" class="carousel-item"><img src="./public/img/Manga/One.svg" alt="One Piece"></a>
+                <a href="/webtoon/solo-leveling" class="carousel-item"><img src="./public/img/Webtoon/Solo.svg" alt="Solo Leveling"></a>
+                <a href="/manga/black-clover" class="carousel-item"><img src="./public/img/Manga/Black.svg" alt="Black Clover"></a>
             </div>
         </section>
     </main>

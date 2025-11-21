@@ -1,5 +1,4 @@
 // Récupère les constantes 
-
 const carousel = document.querySelector('.carousel'); // Récupère la classe carousel
 const items = [...carousel.children]; // Récupère ce qu'il y a dans le carousel
 const totalItems = items.length; // Compte le nombre d'items dans le carousel
@@ -50,7 +49,6 @@ function deplacer() {
     }
   }, 600);
 }
-
 setInterval(deplacer, 2000);
 
 
